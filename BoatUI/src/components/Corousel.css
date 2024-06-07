@@ -1,0 +1,149 @@
+
+.container{
+  background-color: #eeffff;
+  min-width: 100%;
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+.image-section{
+ height: 500px;
+ width:  620px;
+}
+@media screen and (max-width: 600px) {
+  .image-section {
+    height: 250px;
+    width: 310px;
+  }
+  .text-section h4{
+    font-size: small;
+}
+}
+.text-section{
+    display: inline-block;
+    justify-content: center;
+    margin-top: 150px;
+    padding-left: 30px;
+}
+.text-section h2{
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-section h4{
+    font-size: 80px;
+    font-style: bold;
+    margin-top: -15px;
+}
+.text-section p{
+    font-size: 30px;
+}
+button {
+  --primary-color: #000000;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  color: var(--secondary-color);
+  
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  /* border-radius: 15% !important; */
+  height: 40px;
+  padding-left: 10px;
+}
+
+button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+  right: 0;
+}
+
+/* Corousel 2 styling */
+
+.image-watch{
+  height: 400px;
+  width:  500px;
+  margin-top: 30px;
+ }
+
+.shop-button{
+  position: absolute;
+  right: 80px;
+}
+.title-section p{
+  position: relative;
+  right: 80px;
+}
+ @media screen and (max-width: 600px) {
+  .image-watch {
+    height: 250px;
+    width: 310px;
+  }
+  .title-section{
+    text-align: center;
+  }
+
+  
+}
+.title-section{
+  margin-top: 150px;
+  margin-left: 0px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.title-section h4{
+  font-size: 70px;
+  
+}
+.title-section p{
+  font-size: 30px; 
+  
+  text-align: end;
+}
+.shop-button{
+  border-radius: 11px;
+  text-align: end;
+  
+}

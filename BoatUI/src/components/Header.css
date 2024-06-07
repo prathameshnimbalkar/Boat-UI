@@ -1,0 +1,127 @@
+.Container {
+    /* border: 1px solid #D4DEDE; */
+    display: grid;
+    width: 100%;
+    grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+    margin-top: -10px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(235, 232, 232);
+  }
+  
+  .hamburger {
+    grid-column: 4/5;
+    display: none;
+  }
+  
+  .logo {
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    height: 50px;
+    grid-column: 1/2;
+    padding: 2px;
+  }
+  .Container a{
+    text-decoration: none;
+    color: black;
+  }
+  .Container ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 13px;
+    
+  }
+  
+  .SearchBar {
+    grid-column: 4/5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    
+  }
+  
+  .searchInput {
+    border-radius: 20px;
+    background-color: rgb(243, 240, 240);
+    border: none;
+    height: 30px;
+    padding: 10px;
+    /* height: 40px;
+    width: 250px; */
+  }
+  
+  .profile {
+    height: 35px;
+    width: 35px;
+
+  }
+  
+  /* @media(){
+    h1{
+
+    }
+    .container{
+
+    }
+  } */
+  @media (max-width: 998px) {
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+    .hamburger {
+        display: grid;
+        margin-top: -25px;
+    }
+    .Container {
+        grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
+        position: relative; /* Ensure the container position is relative */
+    }
+    .Container ul {
+        display: none;
+    }
+    .SearchBar, .profile {
+        margin-right: 50px;
+    }
+    .mobile-menu-link {
+        position: absolute; /* Position absolute to overlay */
+        top: 0;
+        left: 0; /* Start from the left of the parent container */
+        z-index: 99; /* Ensure it overlays other elements */
+        margin-bottom: 20px;
+        margin-top: 82px;
+        margin-left: -40px;
+        background-color: #eff4f7;
+        border-color: beige;
+        height: 15rem;
+        min-width:  35%; /* Adjust to 100% width to cover the container */
+        display: grid;
+        grid-column: 2/5;
+        align-items: center;
+        padding-left: 2rem;
+        animation: slideInFromLeft 0.5s forwards; /* Adjust duration as needed */
+    }
+
+    .mobile-menu-link ul {
+        height: 10rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+/* Keyframes for sliding in from the left */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+  

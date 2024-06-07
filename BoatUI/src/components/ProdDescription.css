@@ -1,0 +1,138 @@
+.product-img{
+box-shadow: #333;
+height: 410px;
+width: 350px;
+margin-top: 30px;
+background-color: rgb(239, 249, 249);
+border-radius: 20px;
+padding: 5px;
+}
+
+.details-section {
+ text-align: left;
+ margin: 30px 90px 75px 0px;
+ /* border: 1px solid green; */
+}
+.details-section p{
+    margin-top: 30px;
+}
+.color{
+    display: inline-flex;
+    padding: 5px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.color-button{
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+.Cart-button{
+    border-radius: 11px;
+    padding: 15px;
+}
+
+
+#red{
+background-color: red;
+border: 1px solid gray;
+padding: 20px;
+color: red;
+}
+
+#gray{
+background-color: gray;
+border: 1px solid gray;
+padding: 20px;
+}
+#black{
+background-color: black;
+border: 1px solid gray;
+padding: 20px;
+}
+#olive{
+background-color: olive;
+border: 1px solid gray;
+padding: 20px;
+}
+
+/*  */
+.radio-input {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    width: 200px;
+    height: 60px;
+justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    
+  }
+  
+  .radio-input input[type=radio] {
+    display: none;
+  }
+  
+  .radio-input input[type=radio] + label {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+  }
+  
+  .radio-input input[type=radio] + label span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    line-height: 44px;
+  }
+  
+  .radio-input input[type=radio] + label span svg {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .radio-input input[type=radio]#color-1 + label span {
+    background-color: #2ecc71;
+  }
+  
+  .radio-input input[type=radio]#color-2 + label span {
+    background-color: #3498db;
+  }
+  
+  .radio-input input[type=radio]#color-3 + label span {
+    background-color: #f1c40f;
+  }
+  .radio-input input[type=radio]#color-4 + label span {
+    background-color: gray;
+  }
+  
+  .radio-input input[type=radio]:checked + label span svg {
+    opacity: 1;
+  }
+  
+  .radio-input:has(input[type=radio]#color-1:checked) {
+    background-color: #2ecc71;
+  }
+  
+  .radio-input:has(input[type=radio]#color-2:checked) {
+    background-color: #3498db;
+  }
+  
+  .radio-input:has(input[type=radio]#color-3:checked) {
+    background-color: #f1c40f;
+  }
+  .radio-input:has(input[type=radio]#color-4:checked) {
+    background-color: gray;
+  }
+  
